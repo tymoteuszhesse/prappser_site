@@ -1,0 +1,15 @@
+{
+    "type": "Container",
+    "color": "#FFFFFF",
+    "alignment": "center",
+    "child": {
+        "type": "Text",
+        "data": "Prappser test app",
+        "maxLines": 3,
+        "overflow": "ellipsis",
+        "style": {
+            "color": "#000000",
+            "fontSize": 20.0
+        }
+    }
+}
