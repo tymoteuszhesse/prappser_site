@@ -107,24 +107,6 @@
                             "type": "flexible",
                             "child": {
                               "type": "text_form_field",
-                              "id": "username",
-                              "args": {
-                                "decoration": {
-                                  "hintText": "Username:",
-                                  "labelText": "Username"
-                                },
-                                "validators": [
-                                  {
-                                    "type": "required"
-                                  }
-                                ]
-                              }
-                            }
-                          },
-                          {
-                            "type": "flexible",
-                            "child": {
-                              "type": "text_form_field",
                               "id": "chat_message",
                               "args": {
                                 "decoration": {
