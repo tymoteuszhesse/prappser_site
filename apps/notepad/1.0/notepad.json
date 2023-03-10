@@ -1,0 +1,10 @@
+{
+  "type": "center",
+  "id": "data",
+  "child": {
+    "type": "text_form_field",
+    "args": {
+      "expands": true
+    }
+  }
+}
