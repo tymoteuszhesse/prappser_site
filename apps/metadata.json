@@ -1,7 +1,8 @@
 {
     "apps": [
         {
-            "name": "chat"
+            "name": "notepad",
+            "latestVersion": "1.0"
         }
     ]
 }

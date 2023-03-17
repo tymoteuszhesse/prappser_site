@@ -2,9 +2,11 @@
     "name": "Notepad",
     "version": 1.0,
     "description": "Simple notepad",
-    "parameters": {
-        "name": "data",
-        "defaultValue": "",
-        "description": "Notepad content data"
-    }
+    "parameters": [
+        {
+            "name": "content",
+            "defaultValue": "",
+            "description": "Notepad content"
+        }
+    ]
 }

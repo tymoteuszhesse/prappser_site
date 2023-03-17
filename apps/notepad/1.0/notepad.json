@@ -1,9 +1,10 @@
 {
   "type": "center",
-  "id": "data",
+  "id": "content",
   "child": {
     "type": "text_form_field",
     "args": {
+      "maxLines": "${null}",
       "expands": true
     }
   }
