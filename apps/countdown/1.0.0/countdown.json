@@ -1,0 +1,14 @@
+{
+  "type": "center",
+  "listen": [],
+  "child": {
+    "id": "content",
+    "type": "text_form_field",
+    "args": {
+      "maxLines": "${null}",
+      "initialValue": "${content}",
+      "expands": true
+    },
+    "listen": []
+  }
+}

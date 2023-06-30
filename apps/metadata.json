@@ -1,8 +1,26 @@
-{
-    "apps": [
-        {
-            "name": "notepad",
-            "latestVersion": "1.0"
-        }
-    ]
-}
+[
+    {
+        "name": "Countdown",
+        "version": "1.0.0",
+        "description": "Create a countdown to your goal",
+        "parameters": [
+            {
+                "name": "goalDate",
+                "defaultValue": "20",
+                "description": "Notepad content"
+            }
+        ]
+    },
+    {
+        "name": "Notepad",
+        "version": "1.0.0",
+        "description": "Simple notepad",
+        "parameters": [
+            {
+                "name": "content",
+                "defaultValue": "",
+                "description": "Notepad content"
+            }
+        ]
+    }
+]
