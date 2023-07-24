@@ -5,8 +5,15 @@
     "parameters": [
         {
             "name": "goalDate",
-            "defaultValue": "20",
-            "description": "Notepad content"
+            "type": "date",
+            "defaultValue": "2024-06-20",
+            "description": "Counting down to this date"
+        },
+        {
+            "name": "goalName",
+            "type": "text",
+            "defaultValue": "your goal",
+            "description": "Name of your goal"
         }
     ]
 }

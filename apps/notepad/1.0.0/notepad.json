@@ -5,6 +5,7 @@
     "id": "content",
     "type": "text_form_field",
     "args": {
+      "minLines": "${null}",
       "maxLines": "${null}",
       "initialValue": "${content}",
       "expands": true

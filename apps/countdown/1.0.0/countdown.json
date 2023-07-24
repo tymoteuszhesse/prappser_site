@@ -1,14 +1,35 @@
 {
   "type": "center",
-  "listen": [],
   "child": {
-    "id": "content",
-    "type": "text_form_field",
+    "type": "set_value",
     "args": {
-      "maxLines": "${null}",
-      "initialValue": "${content}",
-      "expands": true
+      "daysLeft": "${js('var date1 = new Date();var date2 = new Date(\"'+goalDate ?? ''+'\");var diffTime = Math.abs(date2 - date1);Math.ceil(diffTime / (1000 * 60 * 60 * 24));')}"
     },
-    "listen": []
+    "child": {
+      "type": "column",
+      "children": [
+        {
+          "type": "text",
+          "args": {
+            "text": "${daysLeft}",
+            "style": {
+              "fontSize": 100.0
+            }
+          }
+        },
+        {
+          "type": "text",
+          "args": {
+            "text": "${'days left to '+goalName ?? 'your goal'}",
+            "style": {
+              "fontSize": 20.0
+            }
+          }
+        }
+      ],
+      "args": {
+        "mainAxisAlignment": "center"
+      }
+    }
   }
 }
