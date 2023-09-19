@@ -1,15 +1,17 @@
 {
   "type": "center",
   "listen": [],
-  "child": {
-    "id": "content",
-    "type": "text_form_field",
-    "args": {
-      "minLines": "${null}",
-      "maxLines": "${null}",
-      "initialValue": "${content}",
-      "expands": true
-    },
-    "listen": []
+  "args": {
+    "child": {
+      "id": "content",
+      "type": "text_form_field",
+      "args": {
+        "minLines": "${null}",
+        "maxLines": "${null}",
+        "initialValue": "${content}",
+        "expands": true
+      },
+      "listen": []
+    }
   }
 }

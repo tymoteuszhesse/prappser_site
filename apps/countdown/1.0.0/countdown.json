@@ -1,34 +1,38 @@
 {
   "type": "center",
-  "child": {
-    "type": "set_value",
-    "args": {
-      "daysLeft": "${js('var date1 = new Date();var date2 = new Date(\"'+goalDate ?? ''+'\");var diffTime = Math.abs(date2 - date1);Math.ceil(diffTime / (1000 * 60 * 60 * 24));')}"
-    },
+  "args": {
     "child": {
-      "type": "column",
-      "children": [
-        {
-          "type": "text",
+      "type": "set_value",
+      "args": {
+        "child": {
+          "type": "column",
           "args": {
-            "text": "${daysLeft}",
-            "style": {
-              "fontSize": 100.0
-            }
+            "children": [
+              {
+                "type": "text",
+                "args": {
+                  "text": "${daysLeft}",
+                  "style": {
+                    "fontSize": 100.0
+                  }
+                }
+              },
+              {
+                "type": "text",
+                "args": {
+                  "text": "${'days left to '+goalName ?? 'your goal'}",
+                  "style": {
+                    "fontSize": 20.0
+                  }
+                }
+              }
+            ],
+            "mainAxisAlignment": "center"
           }
         },
-        {
-          "type": "text",
-          "args": {
-            "text": "${'days left to '+goalName ?? 'your goal'}",
-            "style": {
-              "fontSize": 20.0
-            }
-          }
+        "values": {
+          "daysLeft": "${js('var date1 = new Date();var date2 = new Date(\"'+goalDate ?? ''+'\");var diffTime = Math.abs(date2 - date1);Math.ceil(diffTime / (1000 * 60 * 60 * 24));')}"
         }
-      ],
-      "args": {
-        "mainAxisAlignment": "center"
       }
     }
   }
