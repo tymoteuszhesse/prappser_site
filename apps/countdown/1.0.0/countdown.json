@@ -11,7 +11,7 @@
               {
                 "type": "text",
                 "args": {
-                  "text": "${daysLeft}",
+                  "text": "${_daysLeft}",
                   "style": {
                     "fontSize": 100.0
                   }
@@ -31,7 +31,7 @@
           }
         },
         "values": {
-          "daysLeft": "${js('var date1 = new Date();var date2 = new Date(\"'+goalDate ?? ''+'\");var diffTime = Math.abs(date2 - date1);Math.ceil(diffTime / (1000 * 60 * 60 * 24));')}"
+          "_daysLeft": "${js('var date1 = new Date();var date2 = new Date(\"'+goalDate ?? ''+'\");var diffTime = Math.abs(date2 - date1);Math.ceil(diffTime / (1000 * 60 * 60 * 24));')}"
         }
       }
     }
