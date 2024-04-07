@@ -30,5 +30,18 @@
                 "description": "Notepad content"
             }
         ]
+    },
+    {
+        "name": "Todolist",
+        "version": "1.0.0",
+        "description": "Simple todo list",
+        "parameters": [
+            {
+                "name": "task",
+                "type": "text",
+                "defaultValue": "example task",
+                "description": "Task name"
+            }
+        ]
     }
 ]
